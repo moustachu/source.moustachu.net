@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+/* **************** LAYOUT ***************** */
+
+/* TODO : Layout is only about positionning, color and images should be place in the skin category  */
+
+html, body{ 
+	margin:0;
+	height: 100% ; 
+}
+.page{ 
+	width: 1024px;
+	margin:0 auto;
+}
+b,.inner, .content{
+	position:relative;
+	margin: 0px auto;
+} 
+b{
+	display:block;
+	background-repeat: no-repeat ;
+	font-size:1%;
+}
+
+.top{  background-position : top center;  }
+.bottom{  background-position : bottom center; }
+
+.content{ width: 1024px ; overflow: visible ;}
+
+.menu { position: relative ; bottom: 2px ; }
+
+
+
+/* **************** GRIDS ***************** */
+
+.line, .lastUnit {overflow: hidden;_overflow:visible;_zoom:1; }
+.unit{float:left;_zoom:1;}
+.unitExt{float:right;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastUnit {float:none;_position:relative; _left:-3px; _margin-right: -3px;width:auto;}
+/* extending grids to allow a unit that takes the width of its content */
+.media{width:auto;}
+
+/* **************** CONTENT ***************** */
+
+body{
+
+	font-family:"Lucida Grande","Segoe UI",Helvetica, Arial, sans-serif; 
+	font-size: 12px ;
+	color: #333333 ;
+
+}
+
+/* ====== Default spacing ====== */
+h1, h2, h3, h4, h5, h6, ul, ol,dl, p,blockquote {padding:5px;margin:0;}
+h1, h2, h3, h4, h5, h6,img{padding-bottom:0px;}
+pre{margin: 10px;}
+table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl,
+ul h1,ul h2,ul h3, ul h4, ul h5, ul h6, ul p, ul ul, ul ol, ul dl,
+ol h1,ol h2,ol h3, ol h4, ol h5, ol h6, ol p, ol ul, ol ol, ol dl {padding:0;margin:0;}
+
+/* ====== Elements ====== */
+img{display:block;}
+em{font-style: italic;}
+strong{font-weight:bold;}
+
+/* ====== Headings ====== */
+/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+h1, .h1{font-size:196%;  font-weight:normal; font-style: normal;}
+h2, .h2{font-size:167%; font-weight:normal; font-style: normal;}
+h3, .h3{font-size:133.33%; font-weight:bold; font-style: normal;}
+h4, .h4{font-size:125%; font-weight:normal; font-style: normal;}
+h5, .h5{font-size:115%; font-weight:bold; font-style: normal;}
+h6, .h6{font-size:100%; font-weight:normal;  font-style: italic;}
+
+/* links */
+a, img { 
+	text-decoration: none; 
+	border-width: 0 ;
+	border-style: none; 
+}
+a:focus, a:hover { text-decoration: underline ; }
+/* a:visited */
+/* ====== Lists ======*/
+/* numbered list */
+ol li{list-style-type: decimal; margin-left:10px; line-height: 175%;}
+/* standard list */
+ul li{list-style-type:disc; margin-left:10px; line-height: 175%;}
+
+/* **************** SKIN ***************** */
+
+.section{
+	margin: 5px auto ;
+	background-color: #777777 ;
+	color: white ;
+	padding: 3px 4px ;
+}
+
+.section li { 
+	display: inline-table ;
+	border: 1px solid white ;
+	padding: 5px 7px ;
+	margin-left: 0px;
+	margin-bottom: 5px ;
+}
