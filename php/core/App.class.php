@@ -29,7 +29,7 @@ class App{
 			self::$instance = new App() ;
 		}
 		
-		//self::$instance->innerTrace("App::getInstance()") ;
+		self::trace("App::getInstance()") ;
 		
 		return self::$instance ;
 	}
@@ -67,11 +67,11 @@ class App{
 	public function innerGet( $name ){
 		// ORDRE : COOKIE < POST < GET 
 		if( isset($_COOKIE[$name])){
-			 return $_COOKIE[$name];
+			 return trim($_COOKIE[$name]);
 		} else if ( isset($_POST[$name])){
-			return $_POST[$name];	
+			return trim($_POST[$name]);	
 		} else if ( isset($_GET[$name])){
-			return $_GET[$name];
+			return trim($_GET[$name]);
 		} else {
 			return false ;
 		}

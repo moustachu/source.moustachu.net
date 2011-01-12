@@ -34,14 +34,14 @@ abstract class Control{
 		
 		$this->smarty = new Smarty() ;
 		
-		$this->smarty->template_dir = Configuration::get("smarty_template_dir");
-        $this->smarty->compile_dir  = Configuration::get("smarty_compil_dir");
-        $this->smarty->config_dir   = Configuration::get("smarty_config_dir");
-        $this->smarty->cache_dir	= Configuration::get("smarty_cache_dir");
+		$this->smarty->template_dir = Configuration::get(Configuration::SMARTY_TEMPLATE_DIR);
+        $this->smarty->compile_dir  = Configuration::get(Configuration::SMARTY_COMPIL_DIR);
+        $this->smarty->config_dir   = Configuration::get(Configuration::SMARTY_CONFIG_DIR);
+        $this->smarty->cache_dir	= Configuration::get(Configuration::SMARTY_CACHE_DIR);
 		
-       	$this->smarty->assign("app_name", Configuration::get("project_name") ) ;
+       	$this->smarty->assign("app_name", Configuration::get(Configuration::PROJECT_NAME) ) ;
 		
-       	if( Configuration::get("production_mode") ){
+       	if( Configuration::get(Configuration::PRODUCTION_MODE) ){
        		$this->toogleCacheOn() ;
        	} else {
        		$this->toogleCacheOff() ;

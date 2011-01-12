@@ -1,6 +1,6 @@
 <?php 
 
-	require_once 'php/test/DebugPage.class.php';
+	require_once 'php/app/DebugPage.class.php';
 	
 	$page = new DebugPage() ;
 

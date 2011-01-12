@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<directory>
+ 	<user>
+ 		<name>test</name>
+  		<password>test</password>
+  	</user>
+ 	<user>
+ 		<name>new_user</name>
+  		<password>new_password</password>
+  	</user>
+</directory>

@@ -18,18 +18,19 @@ class Configuration{
 	 */
 	private $global_conf ;
 
-	const PROJECT_NAME = "project_name" ;
-	const PROJECT_VERSION = "project_version" ;
-	const PROJECT_CONTACT = "project_contact" ;
-	const PRODUCTION_MODE = "production_mode" ;
-	const MAIN_LOG_FILE = "main_log_file" ;
-	const SMARTY_TEMPLATE_DIR = "smarty_template_dir" ;
-	const SMARTY_COMPIL_DIR = "smarty_compil_dir" ;
-	const SMARTY_CONFIG_DIR = "smarty_config_dir" ;
-	const SMARTY_CACHE_DIR = "smarty_cache_dir" ;
+	const PROJECT_NAME = "project.name" ;
+	const PROJECT_VERSION = "project.version" ;
+	const PROJECT_CONTACT = "project.contact" ;
+	const PRODUCTION_MODE = "production.mode" ;
+	const MAIN_LOG_FILE = "main.log.file" ;
+	const SMARTY_TEMPLATE_DIR = "smarty.template.dir" ;
+	const SMARTY_COMPIL_DIR = "smarty.compil.dir" ;
+	const SMARTY_CONFIG_DIR = "smarty.config.dir" ;
+	const SMARTY_CACHE_DIR = "smarty.cache.dir" ;
 	const JQUERY = "jquery" ;
 	const JQUERY_UI = "jquery.ui" ;
 	const JQUERY_UI_CSS = "jquery.ui.css" ;
+	const AUTH_DB_FILE = "auth.db.file" ;
 	
 	/**
 	 * Chemin du fichier de log
@@ -91,7 +92,7 @@ class Configuration{
 	 * @param string $name
 	 * @return string
 	 */
-	public function innerGet( $name ){
+	private function innerGet( $name ){
 		return $this->global_conf[$name] ;
 	}
 	
