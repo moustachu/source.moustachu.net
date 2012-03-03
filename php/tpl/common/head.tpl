@@ -5,9 +5,9 @@
 {/foreach}
 	<title>{$title}</title>
 {foreach from=$css item=css_file}
-	<link rel="stylesheet" type="text/css" href="css/{$css_file}" />
+	<link rel="stylesheet" type="text/css" href="{$root}css/{$css_file}" />
 {/foreach}
 {foreach from=$js item=js_file}
-	<script type="text/javascript" src="js/{$js_file}"/></script>
+	<script type="text/javascript" src="{$root}js/{$js_file}"></script>
 {/foreach}
 </head>

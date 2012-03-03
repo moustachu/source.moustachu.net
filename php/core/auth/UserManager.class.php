@@ -45,8 +45,9 @@ class UserManager{
 	 * 
 	 * XML template : 
 	 * <directory>
-	 * 		<user name="--username--">
-	 * 			<password>--password--</password>
+	 * 		<user>
+	 * 			<username>--username--</username>
+	 *   		<password>--password--</password>
 	 *   	</user>
 	 * 	 	[...]	
 	 *  </directory>
@@ -97,6 +98,7 @@ class UserManager{
 		if( empty($username) ){
 			return false ;
 		}
+		
 		if( empty($password) ){
 			return false ;
 		}
@@ -153,10 +155,16 @@ class UserManager{
 			}
 		}
 		
-		return null ;
+		return false ;
 	}
 	
-	
-}
+	public function getList(){
+		$result = array() ;
+		foreach( $this->data->user as $index => $user){
+			array_push($result,$user->name) ;
+		}
+		return $result ; 
+	}
+}	
 
 ?>

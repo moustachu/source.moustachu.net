@@ -1,0 +1,17 @@
+.ui-widget, 
+.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea, 
+.ui-widget button { font-family: inherit; font-size: 100%; }
+
+.ui-widget .ui-widget { font-size: 90%; }
+
+.ui-button-text-only .ui-button-text, 
+.ui-button-text-icon-primary .ui-button-text { padding: 1px 8px 2px ; font-size: 90%; }
+
+.ui-button-text-icon-primary .ui-button-text { padding-left: 16px ; }
+
+.ui-button-text-icon-primary .ui-button-icon-primary { left: 0 ;}
+
+.tx-std { border-width: 0; padding: 0; margin: 2px 3px ; font-size: 90% }
+.tx-icon { margin: 0; }

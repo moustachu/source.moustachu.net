@@ -82,15 +82,15 @@ class UserManagerTest extends PHPUnit_Framework_TestCase {
 		
 		$username = null ;
 		
-		$this->assertNull(self::$instance->getUser($username)) ;
+		$this->assertFalse(self::$instance->getUser($username)) ;
 		
 		$username = "" ;
 		
-		$this->assertNull(self::$instance->getUser($username)) ;
+		$this->assertFalse(self::$instance->getUser($username)) ;
 		
 		$username = "this is not a user" ;
 		
-		$this->assertNull(self::$instance->getUser($username)) ;
+		$this->assertFalse(self::$instance->getUser($username)) ;
 		
 		$user = self::$instance->getUser(self::$user_init) ;
 		

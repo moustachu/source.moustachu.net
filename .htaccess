@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule	^$ go.php [L]
+RewriteRule	^p/(.*) go.php?page=$1 [QSA,L]

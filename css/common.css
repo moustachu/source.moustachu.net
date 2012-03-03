@@ -9,26 +9,13 @@ html, body{
 	height: 100% ; 
 }
 .page{ 
-	width: 1024px;
+	width: 960px;
 	margin:0 auto;
 }
-b,.inner, .content{
-	position:relative;
-	margin: 0px auto;
-} 
-b{
-	display:block;
-	background-repeat: no-repeat ;
-	font-size:1%;
+
+.h01{
+	height: 160px ;
 }
-
-.top{  background-position : top center;  }
-.bottom{  background-position : bottom center; }
-
-.content{ width: 1024px ; overflow: visible ;}
-
-.menu { position: relative ; bottom: 2px ; }
-
 
 
 /* **************** GRIDS ***************** */
@@ -60,8 +47,32 @@ body{
 
 }
 
+.mod {
+	margin: 3px ;
+	padding-bottom: 5px ;
+}
+
+.bar {
+	padding-bottom: 0px;
+}
+
+.head {
+	margin-top: 0;
+	padding-top: 6px ;
+	padding-bottom: 3px ;
+}
+
+.foot{
+	margin-top : 10px ;
+	font-size:85%;
+}
+
+.error{
+	font-weight: bold ;
+}
+
 /* ====== Default spacing ====== */
-h1, h2, h3, h4, h5, h6, ul, ol,dl, p,blockquote {padding:5px;margin:0;}
+h1, h2, h3, h4, h5, h6, ul, ol,dl, p, blockquote, form td {padding:5px;margin:0;}
 h1, h2, h3, h4, h5, h6,img{padding-bottom:0px;}
 pre{margin: 10px;}
 table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl,
@@ -72,6 +83,7 @@ ol h1,ol h2,ol h3, ol h4, ol h5, ol h6, ol p, ol ul, ol ol, ol dl {padding:0;mar
 img{display:block;}
 em{font-style: italic;}
 strong{font-weight:bold;}
+code{font-family: "Courier New", Courier, monospace; font-size:115%; }
 
 /* ====== Headings ====== */
 /* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
@@ -90,6 +102,7 @@ a, img {
 }
 a:focus, a:hover { text-decoration: underline ; }
 /* a:visited */
+
 /* ====== Lists ======*/
 /* numbered list */
 ol li{list-style-type: decimal; margin-left:10px; line-height: 175%;}
@@ -98,17 +111,48 @@ ul li{list-style-type:disc; margin-left:10px; line-height: 175%;}
 
 /* **************** SKIN ***************** */
 
-.section{
-	margin: 5px auto ;
-	background-color: #777777 ;
-	color: white ;
-	padding: 3px 4px ;
+input[type="text"], input[type="password"] {
+	padding: 0 2px;
 }
 
-.section li { 
-	display: inline-table ;
-	border: 1px solid white ;
-	padding: 5px 7px ;
-	margin-left: 0px;
-	margin-bottom: 5px ;
+.error{
+	background-color: transparent ;
+	color : red ;
 }
+
+.head{
+	background-color: #777777 ;
+	color: white ;
+}
+
+.foot{ text-align: right;}
+
+.alt{
+	background-color: #EEEEEE ;
+}
+
+.alt2 {
+	border: 1px solid #555555;
+}
+
+.nav, .menu{
+	font-size: 125%; color: #333333 ;
+}
+
+.nav:hover, .menu:hover{
+	text-decoration: none;
+}
+
+.nav:hover{
+	color: #FF6600 ;
+}
+
+.menu:hover{
+	border-bottom: 2px solid white ;
+}
+
+.label{
+
+}
+
+

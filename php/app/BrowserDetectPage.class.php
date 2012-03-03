@@ -1,5 +1,5 @@
 <?php
-require_once 'php/test/DebugPage.class.php';
+require_once 'php/app/DebugPage.class.php';
 require_once 'php/core/Browser.class.php';
 
 /**
