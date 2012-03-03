@@ -85,6 +85,8 @@ abstract class Page extends Control{
 		$this->js = array() ;
 		$this->smarty->assignByRef("js",$this->js) ;
 		
+		$this->setPlugin();
+		
 	}
 
 	public function prepare(){
@@ -132,7 +134,6 @@ abstract class Page extends Control{
 		} else {
 			$this->smarty = new Smarty() ;
 			$this->plugin_manager = new PluginManager($this->smarty) ;
-			$this->setPlugin();
 		}
 	}
 	
