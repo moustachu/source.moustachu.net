@@ -29,7 +29,7 @@ class BrowserDetectPage extends DebugPage{
 		
 		$this->smarty->assign("php_user_agent",$this->browser->getPhpUserAgent()) ;
 		$this->smarty->assign("b_info",$this->browser->getBrowserInfo()) ;
-		$this->smarty->assign_by_ref("b_feature",$this->browser->getBrowserFeatures()) ;
+		$this->smarty->assignByRef("b_feature",$this->browser->getBrowserFeatures()) ;
 		
 	}
 	

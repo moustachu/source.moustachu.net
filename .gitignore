@@ -38,6 +38,6 @@ Thumbs.db
 tmp*
 data*
 index.html
-php/lib/smarty*
+#php/lib/smarty*
 *local*
 *local*

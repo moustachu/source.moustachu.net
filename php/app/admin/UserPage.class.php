@@ -30,7 +30,7 @@ class UserPage extends AuthPage{
 		$this->smarty->assign("project_name",Configuration::get(Configuration::PROJECT_NAME)) ;
 		$this->smarty->assign("project_version",Configuration::get(Configuration::PROJECT_VERSION)) ;
 		
-		$this->smarty->assign_by_ref("userlist",$this->user_manager->getList()) ;
+		$this->smarty->assignByRef("userlist",$this->user_manager->getList()) ;
 		
 		$this->addForm("UserAdd", new UserAddForm($this->user_manager, $this->smarty) ) ;
 		$this->addForm("UserChange", new UserChangeForm($this->user_manager, $this->smarty) ) ;
